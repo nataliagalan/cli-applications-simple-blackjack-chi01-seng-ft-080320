@@ -31,14 +31,23 @@ end
 
 def initial_round
   # code #initial_round here
+  sum = rand(1..11) + rand(1..11)
+  display_card_total(sum)
 end
 
 def hit?
   # code hit? here
+  prompt_user
+ if get_user_input == 'h'
+   card_total += deal_card
+ end
+   card_total
 end
+
 
 def invalid_command
   # code invalid_command here
+  puts "invalid"
 end
 
 #####################################################
